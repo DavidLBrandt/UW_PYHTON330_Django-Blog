@@ -1,1 +1,2 @@
-# UW_PYHTON330_Django-Blog
+# django-blog
+UW Python 330 A - Django Blog
