@@ -62,6 +62,7 @@ http://localhost:8000/
 
 04) Build SQLite3 database
 ```
+C:\_Python330\Django Blog\django-blog\mysite>python manage.py makemigrations
 C:\_Python330\Django Blog\django-blog\mysite>python manage.py migrate
 ```
 
