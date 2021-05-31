@@ -89,7 +89,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-Run Django Server (http://localhost:8000/admin/)
+Run Django Server (http://localhost:8000/admin/, http://localhost:8000/)
 ```
 python manage.py runserver
 ```
