@@ -1,5 +1,6 @@
 from django.contrib import admin
 from blogging.models import Post, Category
+
 # https://docs.djangoproject.com/en/dev/ref/contrib/admin/#working-with-many-to-many-models
 
 
@@ -14,7 +15,7 @@ class PostAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    exclude = ('posts',)
+    exclude = ("posts",)
 
 
 admin.site.register(Post, PostAdmin)

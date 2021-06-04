@@ -7,13 +7,12 @@ from django.views.generic.detail import DetailView
 
 
 class PostListView(ListView):
-    queryset = (Post.objects
-                .filter(published_date__isnull=False)
-                .order_by('-published_date'))
-    template_name = 'blogging/list.html'
+    queryset = Post.objects.filter(published_date__isnull=False).order_by(
+        "-published_date"
+    )
+    template_name = "blogging/list.html"
 
 
 class PostDetailView(DetailView):
-    queryset = (Post.objects
-                .filter(published_date__isnull=False))
-    template_name = 'blogging/detail.html'
+    queryset = Post.objects.filter(published_date__isnull=False)
+    template_name = "blogging/detail.html"
