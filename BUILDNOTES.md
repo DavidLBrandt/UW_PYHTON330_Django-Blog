@@ -153,12 +153,20 @@ Checks imported modules for security vulnerabilities
 ## To Publish to Heroku
 
 All commands to be run from inside the repository directory.
+Run from master repository.
 ```
-$ git init                # Only necessary if this is not already a git repository
 $ heroku create
-$ git push heroku Development:master  # If you have any changes or files to add, commit them before you push. 
+$ heroku config:set DJANGO_SETTINGS_MODULE=mysite.heroku 
+$ heroku config:set SECRET_KEY=<your key here>
 $ heroku addons:create heroku-postgresql:hobby-dev
-$ heroku run python setup.py
+$ heroku config
+=== damp-scrubland-96141 Config Vars
+DATABASE_URL:           postgres://afujaaqnoqkfmi:4ba8102667e3676ff62b717cb82cec8450d6ac5c2ae9c90c5b71647b32c2dded@ec2-3-234-85-177.compute-1.amazonaws.com:5432/df8gojq6lvjp03
+DJANGO_SETTINGS_MODULE: mysite.heroku
+SECRET_KEY:             <your key here>
+$ git push heroku master
+$ heroku run python manage.py createsuperuser
+
 $ heroku open
 ```
 
