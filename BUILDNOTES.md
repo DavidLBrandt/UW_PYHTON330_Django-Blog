@@ -161,3 +161,6 @@ $ heroku addons:create heroku-postgresql:hobby-dev
 $ heroku run python setup.py
 $ heroku open
 ```
+
+## Travis CI ##
+https://travis-ci.com/github/DavidLBrandt/UW_PYHTON330_Django-Blog
