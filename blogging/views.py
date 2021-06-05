@@ -27,12 +27,12 @@ def add_model(request):
         if form.is_valid():
             model_instance = form.save(commit=False)
             model_instance.published_date = timezone.now()
-            model_instance.author = User.objects.get(username='Anonymous')
+            model_instance.author = User.objects.get(username="Anonymous")
             model_instance.save()
-            return redirect('/')
+            return redirect("/")
 
     else:
 
         form = MyPostForm()
 
-        return render(request, "add.html", {'form': form})
+        return render(request, "add.html", {"form": form})
