@@ -166,9 +166,12 @@ DJANGO_SETTINGS_MODULE: mysite.heroku
 SECRET_KEY:             <your key here>
 $ git push heroku master
 $ heroku run python manage.py createsuperuser
-
 $ heroku open
 ```
+https://intense-plateau-86067.herokuapp.com/
 
 ## Travis CI ##
 https://travis-ci.com/github/DavidLBrandt/UW_PYHTON330_Django-Blog
+
+## GitHub ##
+https://github.com/DavidLBrandt/UW_PYHTON330_Django-Blog
