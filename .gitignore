@@ -11,4 +11,5 @@ __pycache__/
 .coverage
 log_*
 superuser.md
+deleteme.txt
 .env

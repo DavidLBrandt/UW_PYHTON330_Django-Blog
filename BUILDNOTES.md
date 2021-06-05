@@ -137,6 +137,17 @@ Lint all files
 forfiles /M *py /C "cmd /c pylint @file"
 ```
 
+### Black ###
+We installed black and used it to check and edit our files
+```
+pip install black
+black --check blogging mysite polling
+git checkout -b add-black
+pip freeze > requirements.txt
+black blogging mysite polling
+git commit -a -m "Applied black."
+```
+
 ## Coverage ##
 ```
 coverage run -m unittest test_main.py
